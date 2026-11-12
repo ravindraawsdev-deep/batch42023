@@ -10,7 +10,9 @@ pipeline{
 	}
 	stage("Hi Akira"){
 	  steps{
-	    script
+	    script{
+           println "Naughty Baby"
+		}
 	  }
 	}
   }
