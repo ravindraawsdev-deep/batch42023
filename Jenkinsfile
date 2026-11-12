@@ -1,17 +1,17 @@
-pipeline {
-  agent any 
-  stages {
-    stage('working with conditions') {
-      steps {
-        script {
-          File myfile = new File("/tmp/test.txt")
-          println myfile.text
-          for(line in myfile.readLines()){
-            println "my line is ${line}"
-          }
-
-        }
-      }
-    }
+pipeline{
+  agent any/slave1/docker/kubernetes
+  stages{
+    stage("Hi Myra"){
+	  steps{
+	    script{
+		   println "Cutie Pie"
+	    }
+	  }
+	}
+	stage("Hi Akira"){
+	  steps{
+	    script
+	  }
+	}
   }
 }
