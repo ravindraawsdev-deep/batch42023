@@ -1,5 +1,5 @@
 pipeline{
-  agent any/slave1/docker/kubernetes
+  agent any
   stages{
     stage("Hi Myra"){
 	  steps{
